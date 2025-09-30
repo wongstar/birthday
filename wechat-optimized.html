@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>甲子华章 - 张水凤女士60岁生日邀请函</title>
+    
+    <!-- 微信分享优化 -->
+    <meta property="og:title" content="甲子华章 - 张水凤女士60岁生日邀请函">
+    <meta property="og:description" content="诚挚邀请您出席张水凤女士60岁生日宴，共庆六十华章">
+    <meta property="og:image" content="https://your-domain.com/share-image.jpg">
+    <meta property="og:url" content="https://your-domain.com">
+    
+    <!-- 微信浏览器优化 -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- 微信JS-SDK -->
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+</head>
+<body>
+    <!-- 微信分享提示 -->
+    <div id="shareTip" class="share-tip">
+        <div class="share-arrow"></div>
+        <p>点击右上角分享给朋友</p>
+    </div>
+
+    <!-- 封面页 -->
+    <section id="cover" class="page active">
+        <div class="cover-background">
+            <div class="golden-particles"></div>
+        </div>
+        <div class="cover-content">
+            <div class="main-title">
+                <h1>甲子华章，共庆六十</h1>
+                <h2>金色年华：<span class="highlight">张水凤</span> 女士 60 岁生日宴</h2>
+            </div>
+            <div class="subtitle">
+                <p>诚挚邀请您出席</p>
+            </div>
+            <div class="date-info">
+                <p class="date">2025.10.04 星期六</p>
+            </div>
+            <button class="enter-btn" onclick="nextPage()">
+                <span>点击进入</span>
+                <span class="emoji">🥂</span>
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- 寿星介绍与感恩页 -->
+    <section id="introduction" class="page">
+        <div class="intro-background">
+            <div class="warm-gradient"></div>
+        </div>
+        <div class="intro-content">
+            <div class="intro-title">
+                <h2>六十载春秋，感恩有您相伴</h2>
+            </div>
+            <div class="intro-photo">
+                <div class="photo-container">
+                    <img src="image/1.jpg" alt="寿星照片" class="main-photo">
+                </div>
+            </div>
+            <div class="intro-text">
+                <p>时光荏苒，岁月如歌。<span class="highlight">张水凤</span> 女士即将迎来花甲之年，人生六十，是智慧与福气的沉淀。我们深知，这份喜悦离不开各位亲朋好友一直以来的关爱与支持。诚邀您来见证这一美好时刻，分享我们的喜悦与感动。</p>
+            </div>
+            <div class="signature">
+                <p><span class="highlight">张水凤</span> 女士及全家 敬邀</p>
+            </div>
+        </div>
+        <div class="page-nav">
+            <button class="nav-btn prev" onclick="prevPage()">← 返回</button>
+            <button class="nav-btn next" onclick="nextPage()">继续 →</button>
+        </div>
+    </section>
+
+    <!-- 宴会详情页 -->
+    <section id="details" class="page">
+        <div class="details-background">
+            <div class="celebration-pattern"></div>
+        </div>
+        <div class="details-content">
+            <div class="details-title">
+                <h2>🎂 盛宴详情 🥂</h2>
+            </div>
+            <div class="event-info">
+                <div class="info-item">
+                    <div class="info-icon">👤</div>
+                    <div class="info-text">
+                        <h3>寿星</h3>
+                        <p><span class="highlight">张水凤</span> 女士</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📅</div>
+                    <div class="info-text">
+                        <h3>时间</h3>
+                        <p>2025年10月4日 (周六)</p>
+                        <p class="time-detail">入席：中午 12:00 恭候</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-text">
+                        <h3>地点</h3>
+                        <p>葛源传说</p>
+                        <p class="address">横峰县兴安大道政府东（世纪城左边）</p>
+                        <button class="nav-btn" onclick="openWechatMap()">🗺️ 一键导航</button>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">👔</div>
+                    <div class="info-text">
+                        <h3>温馨提示</h3>
+                        <p>着装建议：休闲舒适，或稍正式</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-nav">
+            <button class="nav-btn prev" onclick="prevPage()">← 返回</button>
+            <button class="nav-btn next" onclick="nextPage()">继续 →</button>
+        </div>
+    </section>
+
+    <!-- 互动与回复页 -->
+    <section id="rsvp" class="page">
+        <div class="rsvp-background">
+            <div class="interactive-pattern"></div>
+        </div>
+        <div class="rsvp-content">
+            <div class="rsvp-title">
+                <h2>席位预留：您的心意，我们期待</h2>
+            </div>
+            <div class="rsvp-text">
+                <p>恳请您在 <span class="highlight">9月30日</span> 前回复，以便我们为您预留最佳席位。</p>
+            </div>
+            <form class="rsvp-form" id="rsvpForm">
+                <div class="form-group">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">出席人数</label>
+                    <select id="guests" name="guests" required>
+                        <option value="">请选择</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人以上</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>是否出席</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="attendance" value="yes" required>
+                            <span class="radio-custom"></span>
+                            是，我会出席
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="attendance" value="no" required>
+                            <span class="radio-custom"></span>
+                            很抱歉，无法出席
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="blessing">祝福语（可选）</label>
+                    <textarea id="blessing" name="blessing" rows="3" placeholder="写下您的祝福..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">提交回复</button>
+            </form>
+            <div class="contact-info">
+                <h3>联系人</h3>
+                <p>联系人：<span class="highlight">张小明</span></p>
+                <p>电话：<a href="tel:13800138000">138-0013-8000</a></p>
+                <button class="wechat-contact-btn" onclick="openWechatContact()">💬 微信联系</button>
+            </div>
+        </div>
+        <div class="page-nav">
+            <button class="nav-btn prev" onclick="prevPage()">← 返回</button>
+            <button class="nav-btn next" onclick="nextPage()">继续 →</button>
+        </div>
+    </section>
+
+    <!-- 相册展示页 -->
+    <section id="gallery" class="page">
+        <div class="gallery-background">
+            <div class="memories-pattern"></div>
+        </div>
+        <div class="gallery-content">
+            <div class="gallery-title">
+                <h2>美好回忆，珍贵时光</h2>
+            </div>
+            <div class="photo-grid" id="photoGrid">
+                <!-- 照片将通过JavaScript动态加载 -->
+            </div>
+        </div>
+        <div class="page-nav">
+            <button class="nav-btn prev" onclick="prevPage()">← 返回</button>
+            <button class="nav-btn next" onclick="nextPage()">继续 →</button>
+        </div>
+    </section>
+
+    <!-- 结束页 -->
+    <section id="ending" class="page">
+        <div class="ending-background">
+            <div class="celebration-lights"></div>
+        </div>
+        <div class="ending-content">
+            <div class="ending-title">
+                <h2>期待与您相聚</h2>
+            </div>
+            <div class="ending-text">
+                <p>感谢您抽出宝贵时间查看邀请函</p>
+                <p>我们期待在<span class="highlight">2025年10月4日</span></p>
+                <p>与您共同庆祝这个特殊的日子</p>
+            </div>
+            <div class="ending-actions">
+                <button class="action-btn" onclick="goToPage('rsvp')">立即回复</button>
+                <button class="action-btn" onclick="shareToWechat()">分享给朋友</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页面指示器 -->
+    <div class="page-indicator">
+        <div class="indicator-dot active" data-page="0"></div>
+        <div class="indicator-dot" data-page="1"></div>
+        <div class="indicator-dot" data-page="2"></div>
+        <div class="indicator-dot" data-page="3"></div>
+        <div class="indicator-dot" data-page="4"></div>
+        <div class="indicator-dot" data-page="5"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="wechat-script.js"></script>
+</body>
+</html>

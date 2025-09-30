@@ -1,0 +1,5 @@
+# 部署文件
+node_modules/
+.git/
+.DS_Store
+*.log
